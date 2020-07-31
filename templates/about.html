@@ -2,24 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel = "icon" href = "{{ url_for('static', filename='imgs/title-icon.png') }}" type = "image/x-icon"> 
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Word Cloud Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+    <title>WCG | About</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html"><img src="logo.png" alt="" width="150px"></a>
+          <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='imgs/logo.png' ) }}" alt="" width="150px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item  active">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="/about">About</a>
                 </li>
               </ul>
             </div>
@@ -28,9 +31,9 @@
 
     <main>
         <h1>About Word Cloud Generator</h1>
-
-        <p>Word Cloud Generator lets you convert the boring text into simple visualization of words in the form of image where words together resemble a cloudy shape.</p>
-        <p>The size of a word shows how often it appears in the text. Word Clouds are widely used for analyzing data from social network website.</p>
+      
+        <p>Word Cloud Generator lets you convert the boring text into simple visualization of words in the form of image where words together resemble a cloudy shape.
+        <br>The size of a word shows how often the word is appeared in the text. Word Clouds are widely used for analyzing data from social network website.</p>
 
         <h3>Usage</h1>
         <p>Word Cloud Generator can be used to :</p>
